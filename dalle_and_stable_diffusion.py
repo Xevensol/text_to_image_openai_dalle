@@ -10,8 +10,8 @@ client = OpenAI()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 load_dotenv()
 API_URL = os.getenv("API_URL")
-api = os.getenv("header")
-headers = {"Authorization": api}
+api_key = os.getenv("API")
+headers = {"Authorization": api_key}
 
 def query_huggingface(payload, retries=3, backoff=2):
     for i in range(retries):
