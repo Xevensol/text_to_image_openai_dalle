@@ -3,3 +3,4 @@ Pillow
 requests
 openai
 google-generativeai
+python-dotenv
